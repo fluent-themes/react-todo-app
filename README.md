@@ -1,6 +1,6 @@
-# TaskFlow - Modern Todo App
+# TaskFlow - React Todo App
 
-A minimal React todo application demonstrating hooks (useState, useEffect) and component patterns. Built for WordPress developers learning modern frontend frameworks.
+A minimal React todo application showcasing hooks such as useState and useEffect along with common component patterns. This app is designed for WordPress developers familiar with jQuery, introducing the fundamentals of React and modern frontend development. It helps users understand the key similarities and differences between WordPress and React workflows.
 
 ## Features
 
@@ -14,7 +14,7 @@ A minimal React todo application demonstrating hooks (useState, useEffect) and c
 
 ---
 
-## Part 1: Installing Prerequisites (The "WordPress" Layer)
+## Part 1: Installing Prerequisites
 
 Before setting up this project, you need Node.js (which includes npm). Think of Node.js as the "PHP" for JavaScript - it runs JavaScript code outside the browser.
 
@@ -71,7 +71,7 @@ npm -v     # Should show 9.x.x or higher
 
 ---
 
-## Part 2: Setting Up TaskFlow (The "Plugin" Layer)
+## Part 2: Setting Up TaskFlow
 
 Unlike PHP projects, React projects are created using a command-line tool. We'll create a fresh React app, then replace the source files with our project files.
 
@@ -147,7 +147,7 @@ Then copy:
 npm start
 ```
 
-Wait about 30 seconds for the first compilation. Your browser will automatically open to **http://localhost:3000** and you'll see the TaskFlow app!
+Wait a few seconds for the first compilation. Your browser will automatically open to **http://localhost:3000** and you'll see the TaskFlow app!
 
 **To stop the server:** Press `Ctrl + C` in Terminal.
 
@@ -182,47 +182,6 @@ useEffect(() => {
 
 ---
 
-## Deploy to Netlify
-
-Netlify is free hosting for static sites. Here's how to deploy:
-
-### Step 1: Push Code to GitHub
-
-1. Create a new repository on https://github.com (click the **+** icon → **New repository**)
-2. Name it `taskflow-react`, keep it public, don't initialize with README
-3. In your Terminal (in the taskflow-react folder):
-
-```bash
-git init
-git add .
-git commit -m "Initial commit"
-git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/taskflow-react.git
-git push -u origin main
-```
-
-### Step 2: Deploy on Netlify
-
-1. Go to https://app.netlify.com/
-2. Click **Sign up** → **Sign up with GitHub**
-3. Authorize Netlify to access your GitHub
-4. Click **Add new site** → **Import an existing project**
-5. Click **GitHub** and find your `taskflow-react` repo
-6. Build settings should auto-detect:
-   - Build command: `npm run build`
-   - Publish directory: `build`
-7. Click **Deploy site**
-8. Wait 1-2 minutes for the build
-9. Your site is live at something like `random-name-12345.netlify.app`!
-
-### Step 3 (Optional): Custom Domain
-
-1. In Netlify dashboard, go to **Site settings** → **Domain management**
-2. Click **Add custom domain**
-3. Follow the instructions to point your domain to Netlify
-
----
-
 ## Project Structure
 
 ```
@@ -243,17 +202,7 @@ taskflow-react/
 
 ---
 
-## Screenshots
-
-Add these screenshots to a `/screenshots` folder:
-
-1. **screenshots/01-main-view.png** - Main view showing todo list with some items, filter buttons, and add form
-2. **screenshots/02-filtered-active.png** - Active filter selected, showing only incomplete todos
-3. **screenshots/03-filtered-completed.png** - Completed filter selected, showing only completed todos with strikethrough
-
----
-
-## Lessons Learned
+## Key Lessons
 
 React fundamentally changes how WordPress developers think about building UIs:
 
